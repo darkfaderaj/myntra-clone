@@ -1,0 +1,102 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body and HTML to take full width/height */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+nav {
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.leftnav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.leftnav a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.leftnav a:hover {
+    color: #ff3f6c;
+}
+
+.leftnav .logo {
+    height: 50px;
+}
+
+#search-box {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+#search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.search-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.rightnav {
+    display: flex;
+    gap: 30px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+.icon-item:hover {
+    color: #ff3f6c;
+}
+
+.icon-item i {
+    font-size: 20px;
+}
+
+/* Superscript 'NEW' styling */
+.new {
+    color: #ff3f6c;
+    font-weight: 600;
+    font-size: 10px;
+}
